@@ -1,0 +1,131 @@
+/* Estilos Gerais */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main {
+    width: 100%;
+    max-width: 960px; /* Limita a largura para melhor leitura em telas grandes */
+}
+
+header {
+    background-color: #ff8c00; /* Fundo laranja para o cabeçalho */
+    padding: 15px 0;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    color: #fff; /* Texto branco para melhor contraste */
+    text-align: center;
+    margin: 0; /* Remove a margem padrão do h1 */
+}
+
+/* Seções */
+section {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Formulário */
+#product-form {
+    display: grid;
+    /* Cria um layout de 2 colunas para o formulário */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espaçamento entre os campos */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#product-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+#product-form input[type="text"],
+#product-form input[type="number"],
+#product-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    font-size: 16px;
+}
+
+#product-form button[type="submit"] {
+    grid-column: 1 / -1; /* Faz o botão ocupar as duas colunas */
+    padding: 12px 20px;
+    background-color: #ff8c00; /* Cor principal alterada para laranja */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#product-form button[type="submit"]:hover {
+    background-color: #e07b00; /* Laranja mais escuro para o hover */
+}
+
+/* Tabela de Produtos */
+#product-list-section h2 {
+    margin-top: 0;
+    color: #4a4a4a;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.delete-btn {
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
